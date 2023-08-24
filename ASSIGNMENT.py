@@ -108,12 +108,6 @@ fruits = ['apple','banana','cherry','orange','gua','pineapple']
 x = fruits.rindex("cherry")
 print(x)
 
-#rindex method
-
-fruits = "apple is a healthy fruit"
-x = fruits.rindex("fruit",0,24)
-print(x)
-
 # find method
 
 fruits = "apple is a healthy fruit"
