@@ -1,8 +1,8 @@
 # to remove charcter from a string
 
-list_a=list(input("enter a list items : "))
-list_a.remove("3")
-print(list_a)
+string=input("enter a string : ")
+string1=string.replace("g"," ")
+print(string1)
 
 print()
 print() 
@@ -10,18 +10,18 @@ print()
 
  #program to check the string is palindrone or not 
 
-a=input()
-reverse_a=""
-for char in a:
-    reverse_a=char+reverse_a
-    if reverse_a==a:
+
+string_value=input()
+last_value=""
+for char in string_value:
+    last_value=char+last_value
+    if last_value==string_value:
         print("true")
     else:
         ("false")
 print()
 print()
 
- #program to check the string is palindrone or not
 
 vowel=("a","e","i","o","u","A","E","I","O","U")
 
@@ -89,3 +89,20 @@ print("sum=",sum)
 
 print()
 print()
+
+
+
+ #program to check the string is palindrone or not 
+
+vowel=("a","e","i","o","u","A","E","I","O","U",)
+
+for char in vowel:
+    string1=input("enter a string : ")
+    if char==string1:
+        print("vowel")
+    else:
+        print("consonent")
+
+print()
+print()
+
