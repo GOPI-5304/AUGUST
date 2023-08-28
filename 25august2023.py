@@ -70,7 +70,7 @@ print()
 #remove all the blank spaces from the string 
 
 string=input()
-sub_string=string.strip()
+sub_string=string.replace(" ","")
 print(sub_string)
 
 
@@ -90,19 +90,18 @@ print("sum=",sum)
 print()
 print()
 
+# to remove the repeated charcyter from the string
 
-
- #program to check the string is palindrone or not 
-
-vowel=("a","e","i","o","u","A","E","I","O","U",)
-
-for char in vowel:
-    string1=input("enter a string : ")
-    if char==string1:
-        print("vowel")
-    else:
-        print("consonent")
+string=input()
+string1=string.replace("g","")
+print(string1)
 
 print()
 print()
 
+
+# to write a program on the number of occurences present in a string
+
+string=input("enter a string : ")
+for alphabets in string:
+    print(alphabets,"=",string.count(alphabets),"times")
