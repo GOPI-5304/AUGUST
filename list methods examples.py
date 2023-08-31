@@ -120,3 +120,67 @@ for i in range(checking_value):
     else:
         print("False")
         
+
+
+# creating a list by using listy comprehension 
+
+new_list="gopi"
+list_comprehension=[name for name in new_list]
+print(list_comprehension)
+
+
+
+# creating list by using for loop 
+
+new_list=[]
+for i in range(1,10+1):
+    new_list.append(i)
+print(new_list)
+
+
+
+#creating a list by using while loop 
+
+new_list=[]
+counter=0
+while counter < 10:
+    new_list.append(counter)
+    counter=counter+1
+print(new_list)
+
+
+# creating list and take out the names of the word present "a"
+
+vehicles=["fortuner","innova crysta","kia seltos","kia carnival","kia sonet","brezaa","shift vdi","shift dzire","alto 800"]
+new_list=[]
+for name in vehicles:  
+    if "a" in name:
+        new_list.append(name)  
+print(new_list)
+
+
+
+# To write a simple program to dispLay the words which vowels would be present.
+
+vowels=["a","e","i","o","u"]
+names=("fortuner is a best car forever and ever")
+empty_list=[]
+for name in names:
+    if name in vowels:
+        if name not in empty_list:
+            empty_list.append(name)
+print(empty_list)  
+            
+
+
+
+# to create a size of list
+
+# Here
+new_list=int(input())
+empty_list=[]
+
+for list_size in range(new_list):
+    new_input=input("enter a string : ")
+    empty_list.append(new_input)
+print(empty_list)
