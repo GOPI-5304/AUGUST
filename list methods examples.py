@@ -97,3 +97,26 @@ print(list_a)
 list_a=["mamatha miss","krishna kumari miss","swaroopa miss","bhagya bhai miss","anjali miss","rama devi miss"]
 list_a.pop()
 print(list_a) 
+
+
+#finding elements by using member ship checking 
+list_a=["fortuner","innova crysta","kia seltos","kia carnival","kia sonet","brezaa","shift vdi","shift dzire","alto 800"]
+list_b=input()
+list_c=list_b in list_a
+print(list_c)
+
+
+print()
+print()
+
+#finding the vehicles names by using member ship checking 
+
+vehicles=["fortuner","innova crysta","kia seltos","kia carnival","kia sonet","brezaa","shift vdi","shift dzire","alto 800"]
+checking_value=int(input())
+for i in range(checking_value):
+    input_value=input("checking vehicle : ")
+    if input_value in vehicles:
+        print("True")
+    else:
+        print("False")
+        
