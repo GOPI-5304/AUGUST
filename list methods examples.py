@@ -172,8 +172,6 @@ for name in names:
 print(empty_list)  
             
 
-
-
 # to create a size of list
 
 # Here
