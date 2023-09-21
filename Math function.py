@@ -1,6 +1,6 @@
 
 # Math function : it is one of the built-in function that imports the mathemetical functions 
-# import math 
+# import math or from math import *
 
 # example : 1
 # Python program to convert value in degreess to radian
