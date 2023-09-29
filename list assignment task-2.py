@@ -1,6 +1,5 @@
-<<<<<<< HEAD
-#list assignments
 
+#list assignments : task 2
 
 # program on merge two lists 
 
@@ -10,6 +9,13 @@ list_b=list(eval(input("enter a list_b values : ")))
 merged_list=list_a+list_b
 
 print(merged_list)
+
+# approach:2
+
+list_1=list(input("enter list values : "))
+list_2=list(input("enter list values : "))
+list_1.extend(list_2)
+print(list_1)
 
 
 # program to find sum of list elemnts
@@ -21,6 +27,17 @@ for numbers in list_a:
     sum=sum+numbers
 print(sum)
 
+# approach 2
+# find the sum of elements in the list by ussing while loop 
+
+import operator
+list_a=[2,5,6,9,70,80,25]
+sum=0
+counter=0
+while counter<len(list_a):
+    sum=sum+ operator.add(0,list_a[counter])
+    counter=counter+1
+print(sum)
 
 
 # python program on to find odd or even number 
@@ -46,6 +63,8 @@ list_b=int(input("enter a particular indexing number : "))
 list_a.pop(list_b)
 print(list_a)
 
+del list_a[list_b]
+print(list_a)
 
 # pyton program to delete given indexing element on the list
 
@@ -244,5 +263,4 @@ print("11.python program to remove duplicates from a list")
 
 list_a=list(eval(input()))
 list_b=set(list_a)
->>>>>>> b752f36 (list assignments:task-2)
 print(list_b)

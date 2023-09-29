@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # python script to add a key to dictionary
 
 print("1.python script to add a key to dictionary")
