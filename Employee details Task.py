@@ -1,4 +1,4 @@
-
+# approach 2
 d={}
 list=[]
 n=int(input("enter no of employees you want : "))
