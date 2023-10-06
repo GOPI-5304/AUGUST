@@ -1,0 +1,83 @@
+" objected oriented programming " :     it is defined as the "it aims to implement real-world entities like inheritance, polymorphisms, encapsulation, etc."
+in the programming. 
+The main concept of OOPs is to bind the data and the functions that work on that together as a single unit.
+
+the oops concept have a 
+1.class 
+2.objects 
+3.values 
+
+> class : class is nothing but a "blue print" of concept what we have to execute the output 
+               the main imp points are : 
+               > it contains no of objects 
+               > it is a logical entity which contains some attributes and methods 
+               >  class is nothing but to store pakages , properties and values like a bundle like system
+
+For example: defining class :
+                                                                                       real world examples like
+                        class class name :                         class car:  the car contains values and attributes and actions 
+                                  statement-1
+                                          | 
+                                          |
+                                          |
+                                 statement N
+
+> objects : Objects are variables that contain data and functions that can be used to manipulate the data.
+                  For example : obj= object name():
+
+
+> by using the oops concept bundle the information of object inside the class 
+>in oops  the only values can be changeble but not attributes and their actions 
+          for example : the object of dog an attributes like dog name,dog color,dog age ,dog breed("these are attributes and not changebele")
+                                  the object of dog an values like dog name is rocky and dog color is black and dog age is 4 yrs and dog breed is rotweiler
+                                   the object of the dog actions like dog can walk and smell and run and bark 
+            
+              refere the above example only value of the of the dog can be changeble other than value we can not changed 
+
+
+> the properties and actions together is called " encapsulation "
+         its like a drug capsule with two shell cap shell and body shell 
+         the body cap shell is a methods and body shell is variables and inside the granuels called values and easily changeble 
+
+> __init__ : In python a special method __init__ is used to assign values to properties 
+
+>For example : 
+
+              class person :
+                       def __init__(self,name,age,gender)
+                       self.name=name
+                       self.age=age
+                       self.gender=gender
+               obj=person("gopi","36","male")
+               print(obj.name)
+              output is gopi 
+
+in programming terminology properties refered as attributes and actions are referred as Methods  
+
+                        Types of classes 
+                       > instance methods 
+                       > class methods 
+                       > static methods  
+
+Instance Method : this method is nothing but where we indicate the self or the variable which transfer from one to another object 
+                                 by taking reference of class 
+
+                                 SELF : self is nothing but passing values of variables fron one object to another object 
+                                 There are 3 ways to declare the instance variable is : 
+                                  1 > inside the constructor we can declare the instance variable by using self 
+                                  2 >inside the instance by using self i.e updating the instance method 
+                                  3 > We declare the variables outside the class by using object reference 
+
+imp Note : we dont how many no of variables present in class but for that purpose we need to declare the function called __dict__
+
+__dict__ : it is the inbuilt function to know easily about which attributes or variables present in class  in the form of dictionary
+For Example :  class mobile:
+                               def __init__(self,name,age,gender):
+                               self.name=name
+                               self.age=age
+                               self.gender=gender
+                              def get_details(self):
+                               self.age="55"
+
+                  obj=mobile("gopi","36","male")
+                  print(obj.__dict__)
