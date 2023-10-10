@@ -81,3 +81,4 @@ For Example :  class mobile:
 
                   obj=mobile("gopi","36","male")
                   print(obj.__dict__)
+> instatnt variables also called as object level variables 

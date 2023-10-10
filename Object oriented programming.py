@@ -3,6 +3,7 @@
 
 # Get the details by by using oops :
 # example 1:
+
 class mobile:
     def __init__(self,name,age,gender):
         self.name=name
@@ -61,3 +62,58 @@ class employee:
 
 obj=employee()
 print(obj.__dict__)
+
+
+# example 4: 
+
+class car:
+    def __init__(self,color,max_speed,accelaration,tyre_friction):
+        self.color=color
+        self.max_speed=max_speed
+        self.accelaration=accelaration
+        self.tyre_friction=tyre_friction
+
+van=car(color="bluish white",max_speed="240 km/hour",accelaration=20,tyre_friction=4)
+print(van.color)
+print(van.max_speed)
+print(van.accelaration)
+print(van.tyre_friction)
+print(van.__dict__)
+
+
+
+class car:
+    def __init__(self,color,max_speed,accelaration,tyre_friction):
+        self.color=color
+        self.max_speed=max_speed
+        self.accelaration=accelaration
+        self.tyre_friction=tyre_friction
+
+    def engine_started(self):
+        self.is_engine_started=True
+    
+    def engine_stop(self):
+        self.is_engine_stop=False
+
+
+van=car(color="bluish white",max_speed=240,accelaration=20,tyre_friction=25)
+van.engine_started()
+print(van.is_engine_started)
+van.engine_stop()
+print(van.is_engine_started)
+
+
+class cart:
+    def __init__(self):
+        self.items={}
+
+    def add_items(self,name,price,quantity):
+        self.items["mobile name"]=name
+        self.items["price"]=price
+        self.items["quantity"]=quantity
+    def get_items(self):
+        print(self.items)
+
+result=cart()
+result.add_items("oppo mobile",25000,5)
+result.get_items()
