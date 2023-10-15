@@ -42,6 +42,6 @@ class user:
 sbi=user("gopi",25,"Male",40532747696)
 sbi.personal_details()
 sbi.deposit(500)
-sbi.withdraw(500)
+sbi.withdraw(300)
 sbi.view()
 
