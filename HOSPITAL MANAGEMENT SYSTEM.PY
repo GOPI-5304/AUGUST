@@ -35,7 +35,8 @@ class patient(HospitalSystem):
             if details["id"]==id:
                 self.list.remove(details)
                 print(f"The id of {id} removed successfully ")
-                print(self.list)
+                for names in self.list:
+                    print(names)
             else:
                 print(f"The details{id} not found to remove ")
     def update_patient_details_by_id(self):
