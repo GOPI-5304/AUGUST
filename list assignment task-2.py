@@ -133,9 +133,6 @@ list_a=list(eval(input()))
 for each_value in list_a:
     print(each_value,end="")
 
-
-# Python program to convert a list of multiple integers into a single integer.
-
 print("11.python program to remove duplicates from a list")
 
 list_a=list(eval(input()))
