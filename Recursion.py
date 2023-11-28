@@ -39,5 +39,5 @@ def squares(num):
         return num
     else:
         return num + squares(num-1)
-num=int(input("Enter a number : "))
+num=input("Enter a number : "))
 print(squares(num))
